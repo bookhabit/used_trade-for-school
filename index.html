@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>학교 중고거래</title>
     <link rel="stylesheet" href="index.css" />
     <!-- 폰트어썸 cdn -->
     <script
       src="https://kit.fontawesome.com/797c8df45b.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div class="root">
@@ -57,12 +65,28 @@
               </div>
             </div>
             <div class="headerRight">
-              <a href="/writePost.html">
-                <img src="svg/sellLogo.png" alt="" />
-                <h4>판매하기</h4>
+              <a href="/writePost.html" class="sellContainer">
+                <img src="svg/sellLogo.png" alt="판매하기" />
+                판매하기
               </a>
               <div class="categoryContainer">
-                <h4>카테고리 아이콘</h4>
+                <img
+                  src="svg/category.png"
+                  alt="카테고리"
+                  class="categoryBtn"
+                />
+                <div class="categoryAbout">
+                  <div class="allCategory">전체 카테고리</div>
+                  <div class="bodyCategory">
+                    <p>남성의류</p>
+                    <p>여성의류</p>
+                    <p>전공수업</p>
+                    <p>교양수업</p>
+                    <p>가전물품</p>
+                    <p>운동물품</p>
+                    <p>청소물품</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -73,14 +97,25 @@
             <div class="chosenContainer">
               <p>찜한상품</p>
               <div class="chosenList">
-                <h4>하트 아이콘</h4>
-                <h4>개수 0</h4>
+                <img
+                  src="svg/chosenIcon.png"
+                  width="12px"
+                  height="12px"
+                  alt="찜 아이콘"
+                />
+                0
               </div>
             </div>
             <div class="recentContainer">
               <p>최근 본 상품</p>
+              <div class="dotWrap">
+                <div class="dot"></div>
+              </div>
               <div class="recentList">
-                <h4>최근 본상품 이미지</h4>
+                <div>
+                  최근 본 상품이 <br />
+                  없습니다
+                </div>
               </div>
               <p>1/1</p>
             </div>

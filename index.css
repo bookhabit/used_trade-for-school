@@ -24,9 +24,6 @@ html{
     justify-content: space-between;
 }
 
-.myStore{
-    
-}
 
 /* 버튼 기본 스타일 지움 */
 button{ 
@@ -34,12 +31,15 @@ button{
     cursor: pointer;
     border: none;
 }
+
+
 .login{
     font-size: 13px;
     color: rgb(102, 102, 102);
     padding: 0px 15px;
     position: relative;
     line-height: 1.4;
+    margin-right: 25px;
 }
 
 .myStore{
@@ -62,6 +62,7 @@ button{
     background: rgb(255, 255, 255);
     z-index: 10;
     border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 10px;
     left: 0px;
 }
 
@@ -135,8 +136,7 @@ p{
     height: 20px;
 }
 
-/* headerAside 스타일링 */
-
+/* 검색어 토글버튼 만들기 - 클릭하면 색깔변경 ---------------------*/
 .aboutSearchContainer{
     position: absolute;
     top: 48px;
@@ -157,7 +157,6 @@ p{
     display: flex;
 }
 
-/* 검색어 토글버튼 만들기 - 클릭하면 색깔변경 ---------------------*/
 .recentSearch{
     padding: 25px 0px 10px;
     -webkit-box-flex: 1;
@@ -201,3 +200,200 @@ p{
 }
 
 /* headerRight */
+.headerRight{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.headerRight .sellContainer {
+    margin-left: 150px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+.headerRight img{
+    vertical-align: bottom;
+    margin-right: 5px;
+    width: 23px;
+    height: 26px;
+}
+
+.headerRight a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.categoryContainer{
+    margin-left: 30px;
+}
+.categoryContainer .categoryBtn{
+    cursor: pointer;
+    width: 20px;
+    height: 16px;
+}
+
+/* 카테고리 div display 토글 만들기 ----------- */
+.categoryAbout{
+    position: absolute;
+    margin-top: 20px;
+    right: calc(50% - 470px);
+    border: 1px solid rgb(217, 217, 217);
+    padding: 20px;
+}
+
+.categoryAbout .allCategory{
+    border-bottom: 1px solid rgb(217, 217, 217);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.categoryAbout .bodyCategory{
+    line-height: 20px;
+}
+.categoryAbout .bodyCategory p {
+    cursor: pointer;
+}
+
+.categoryAbout .bodyCategory p:hover {
+    color:red
+}
+
+
+/* headerAside 스타일링 */
+.headerAsideContainer{
+    position: absolute;
+    top: 102px;
+    right: calc(50% - 617px);
+    z-index: 20;
+}
+
+.headerAside{
+    width: 90px;
+}
+
+.chosenContainer{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    margin-bottom: 6px;
+}
+
+.chosenContainer:first-child{
+    border-color: rgb(102, 102, 102);
+}
+
+.chosenContainer p {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.chosenList{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: rgb(204, 204, 204);
+    font-weight: 600;
+}
+
+.chosenList img{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.recentContainer{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    margin-bottom: 6px;
+}
+
+.recentContainer p {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+.recentContainer .dotWrap{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.recentContainer .dotWrap .dot{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgb(247, 0, 0);
+    font-weight: 600;
+    width: 38px;
+    border-bottom: 2px dotted rgb(136, 136, 136);
+}
+
+
+.recentContainer .recentList{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+}
+
+.goToTop:last-child{
+    margin-bottom: 0px;
+    padding: 0px;
+    border-color: rgb(229, 229, 229);
+}
+
+.goToTop{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    margin-bottom: 6px;
+}
+
+.goToTop button{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+
+
+
+
+
+
+
+/* pagination  */
+.main .mainListContainer .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
