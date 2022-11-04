@@ -125,7 +125,6 @@ p{
 /* 포커스 있을 때도 input style 초기화 */
 .headerCenter > .search > input:active{
     border: none;
-    /* focus 주었을 때 최근검색어창 display block 시키기 --------------- */
 }
 
 .searchInput{
@@ -138,6 +137,7 @@ p{
 
 /* 검색어 토글버튼 만들기 - 클릭하면 색깔변경 ---------------------*/
 .aboutSearchContainer{
+    
     position: absolute;
     top: 48px;
     left: 0px;
@@ -145,7 +145,7 @@ p{
     border: 1px solid rgb(217, 217, 217);
     background: rgb(255, 255, 255);
     z-index: 10;
-    /* display: none; */
+    display: none;
 }
 
 .aboutSearch{
@@ -170,6 +170,7 @@ p{
     border-top-color: rgb(247, 47, 51);
     border-right-color: rgb(247, 47, 51);
     border-left-color: rgb(247, 47, 51);
+    cursor: pointer;
 }
 
 .popularSearch{
@@ -181,7 +182,9 @@ p{
     box-sizing: border-box;
     text-align: center;
     font-weight: 600;
+    cursor: pointer;
 }
+
 
 .aboutContent{
     height: 360px;
@@ -238,14 +241,17 @@ p{
     height: 16px;
 }
 
+
 /* 카테고리 div display 토글 만들기 ----------- */
 .categoryAbout{
+    display: none;
     position: absolute;
     margin-top: 20px;
     right: calc(50% - 470px);
     border: 1px solid rgb(217, 217, 217);
     padding: 20px;
 }
+
 
 .categoryAbout .allCategory{
     border-bottom: 1px solid rgb(217, 217, 217);
