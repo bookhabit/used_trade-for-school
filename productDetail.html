@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학교 중고거래</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/productDetail.css" />
+    <!-- 폰트어썸 cdn -->
+    <script
+      src="https://kit.fontawesome.com/797c8df45b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <div class="topContainer">
+        <div class="top">
+          <button class="myStore">내 상점</button>
+          <button class="login">로그인/회원가입</button>
+        </div>
+      </div>
+
+      <div class="headerContainer">
+        <div class="headerMain">
+          <div class="header">
+            <div class="headerLeft">
+              <a href="/">
+                <img src="svg/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="headerCenter">
+              <div class="search">
+                <input
+                  type="text"
+                  placeholder="상품명,학교명 입력"
+                  class="searchInput"
+                />
+                <a href="/">
+                  <img
+                    src="svg/search.svg"
+                    alt="검색아이콘"
+                    class="searchSvg"
+                  />
+                </a>
+              </div>
+              <div class="aboutSearchContainer">
+                <div class="aboutSearch">
+                  <div class="aboutHeader">
+                    <p class="recentSearch">최근검색어</p>
+                    <p class="popularSearch">인기검색어</p>
+                  </div>
+                  <div class="aboutContent">
+                    <p>최근검색어가 없습니다</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="headerRight">
+              <a href="/register.html" class="sellContainer">
+                <img src="svg/sellLogo.png" alt="판매하기" />
+                판매하기
+              </a>
+              <div class="categoryContainer">
+                <img
+                  src="svg/category.png"
+                  alt="카테고리"
+                  class="categoryBtn"
+                />
+                <div class="categoryAbout">
+                  <div class="allCategory">전체 카테고리</div>
+                  <div class="bodyCategory">
+                    <p>남성의류</p>
+                    <p>여성의류</p>
+                    <p>전공수업</p>
+                    <p>교양수업</p>
+                    <p>가전물품</p>
+                    <p>운동물품</p>
+                    <p>청소물품</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="headerAsideContainer">
+          <div class="headerAside">
+            <div class="chosenContainer">
+              <p>찜한상품</p>
+              <div class="chosenList">
+                <img
+                  src="svg/chosenIcon.png"
+                  width="12px"
+                  height="12px"
+                  alt="찜 아이콘"
+                />
+                0
+              </div>
+            </div>
+            <div class="recentContainer">
+              <p>최근 본 상품</p>
+              <div class="dotWrap">
+                <div class="dot"></div>
+              </div>
+              <div class="recentList">
+                <div>
+                  최근 본 상품이 <br />
+                  없습니다
+                </div>
+              </div>
+              <p>1/1</p>
+            </div>
+            <div class="goToTop">
+              <button>TOP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainProductContainer">
+        <div class="mainProductDiv">
+          <div class="mainProductWrapper">
+            <!-- 카테고리 컨테이너 -->
+            <div class="productCategoryContainer">
+              <div class="productCategoryNav">
+                <div class="productCategoryHome">
+                  <img src="svg/productDetail/categoryHome.png" alt="" />
+                  홈
+                </div>
+                <div class="productCategoryGroup">
+                  <img
+                    src="svg/productDetail/nextCategory.png"
+                    alt="다음 카테고리"
+                  />
+                  <div class="categorySelectorWrapper">
+                    <div class="categorySelectDiv">
+                      <div class="categorySelector">
+                        패션 액세서리
+                        <img
+                          src="svg/productDetail/moreCategory.png"
+                          alt="카테고리 종류"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productCategoryGroup">
+                  <img
+                    src="svg/productDetail/nextCategory.png"
+                    alt="다음 카테고리"
+                  />
+                  <div class="categorySelectorWrapper">
+                    <div class="categorySelectDiv">
+                      <div class="categorySelector">
+                        모자
+                        <img
+                          src="svg/productDetail/moreCategory.png"
+                          alt="카테고리 종류"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productCategoryGroup">
+                  <img
+                    src="svg/productDetail/nextCategory.png"
+                    alt="다음 카테고리"
+                  />
+                  <div class="categorySelectorWrapper">
+                    <div class="categorySelectDiv">
+                      <div class="categorySelector">
+                        볼캡
+                        <img
+                          src="svg/productDetail/moreCategory.png"
+                          alt="카테고리 종류"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 상품설명 -->
+            <div class="showProductContainer">
+              <div class="showProduct">
+                <div class="productImgWrapper">
+                  <div class="productImgDiv">
+                    <div class="productImg">
+                      <img
+                        src="svg/productDetail/capImg.jpg"
+                        alt="볼캡모자(상품이미지)"
+                      />
+                    </div>
+                    <div class="productMoreImgBtnDiv">
+                      <button class="productMoreImgBtn"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="productContentWrapper">
+                  <div class="productContentDiv">
+                    <div class="productContent">
+                      <div class="titleAndPrice">
+                        <div class="productTitle">MLB LA 볼캡 모자</div>
+                        <div class="priceWrapper">
+                          <div class="productPrice">
+                            32,000
+                            <span>원</span>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                      <div class="productDetails">
+                        <div class="detailInfo">
+                          <div class="detailStateDiv">
+                            <div class="detailState">상품상태</div>
+                            <div class="detailStateValue">중고</div>
+                          </div>
+                          <div class="exchangeDiv">
+                            <div class="exchange">교환여부</div>
+                            <div class="exchangeValue">교환불가능</div>
+                          </div>
+                          <div class="shippingFeeDiv">
+                            <div class="shippingFee">배송비</div>
+                            <div class="shippingFeeValue">배송비 별도</div>
+                          </div>
+                          <div class="tradeAreaDiv">
+                            <div class="tradeArea">거래지역</div>
+                            <div class="tradeAreaValue">전국</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productBtns">
+                      <button class="wishBtn">
+                        <img
+                          src="svg/productDetail/wishIcon.svg"
+                          alt="찜 아이콘"
+                        />
+                        <span>찜</span>
+                        <span>1</span>
+                      </button>
+                      <button class="talkBtn">
+                        <img
+                          src="svg/productDetail/talkBtn.png"
+                          alt="번개톡 아이콘"
+                        />
+                        번개톡
+                      </button>
+                      <button class="buyBtn">바로구매</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 연관상품 -->
+            <div class="relatedProductContainer">
+              <div class="relatedProduct">
+                <div class="relatedProudctTop">연관상품</div>
+                <div class="relatedProductContent">
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                  <div class="relatedProductWrapper">
+                    <a>
+                      <div class="relatedProductImg">
+                        <img
+                          src="svg/productDetail/relatedProduct.jpg"
+                          alt="연관상품"
+                        />
+                      </div>
+                      <div class="relatedProductTitle">골프모자2개 새상품</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 공유하기 sns -->
+            <div class="shareSNS">
+              <button class="shareNaver">네이버</button>
+              <button class="shareFacebook">페이스북</button>
+              <button class="shareTwitter">트위터</button>
+              <button class="shareURL">URL</button>
+            </div>
+            <!-- 상품,상점정보 -->
+            <div class="productBottom">
+              <div class="productInfoContent">
+                <div class="productInfoWrapper">
+                  <div class="productInfo">
+                    <div class="productInfoTitle">상품정보</div>
+                    <div class="productInfoDesc">
+                      <div class="productDescContent">
+                        <p style="width: 663px">
+                          구매하고 나서 실착 2번 정도? 📌색상- 블루 오염,하자
+                          없음 모자가 탄탄하지 않고 흐물거리는 재질.. 뭐 그런 거
+                        </p>
+                      </div>
+                      <div class="productTagDiv">
+                        <div class="productTag">상품태그</div>
+                        <div class="productTagValue">
+                          <a>#MLB</a>
+                          <a>#블루</a>
+                          <a>#볼캡</a>
+                          <a>#모자</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="storeInfoContent">
+                <div class="storeInfoContentWrapper">
+                  <div class="storeInfoTop">
+                    <div class="storeInfoTitle">상점정보</div>
+                    <div class="storeInfoBody">
+                      <div class="sellerProfile">
+                        <a></a>
+                        <div class="sellerName">
+                          <a>아이고금쪽아</a>
+                          <div class="stats">
+                            <a>상품 15</a>
+                            <a>팔로워0</a>
+                          </div>
+                        </div>
+                      </div>
+                      <button>팔로우</button>
+                      <div class="sellerBestProduct">
+                        <div class="sellerBestProduct1">
+                          <a>
+                            <img
+                              src="svg/productDetail/sellerBestProduct1.jpg"
+                              alt=""
+                            />
+                            <div class="sellerBestProductPrice">
+                              <span>16,000</span>원
+                            </div>
+                          </a>
+                        </div>
+                        <div class="sellerBestProduct2">
+                          <a>
+                            <img
+                              src="svg/productDetail/sellerBestProduct2.jpg"
+                              alt=""
+                            />
+                            <div class="sellerBestProductPrice">
+                              <span>45,000</span>원
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="moreButtonWrapper">
+                        <a>
+                          <span>13개</span>
+                          상품 더보기
+                        </a>
+                      </div>
+                      <div>상점후기</div>
+                      <div class="EmptyReviewWrapper">
+                        <div class="EmptyReview">
+                          등록된 후기가 없습니다.<br />첫 후기를 등록해보세요!
+                        </div>
+                        <a>후기작성</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">footer입니다</div>
+    </div>
+  </body>
+</html>
