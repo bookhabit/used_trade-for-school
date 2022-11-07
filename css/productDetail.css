@@ -1,3 +1,4 @@
+/* 상품상세페이지 스타일링 */
 .mainProductDiv{
     display: flex;
     -webkit-box-pack: center;
@@ -7,3 +8,139 @@
 .mainProductWrapper{
     width: 1024px;
 }
+
+/* 상품 카테고리 스타일링 */
+.productCategoryContainer{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 30px 0px 20px;
+    height: 78px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.productCategoryContainer a {
+    text-decoration: none;
+    color:  rgb(77, 77, 77);
+}
+.productCategoryNav{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.productCategoryNav img{
+    vertical-align: bottom;
+    border-style: none;
+    width: 12px;
+    height: 12px;
+}
+
+.productCategoryHome{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 28px;
+    font-size: 14px;   
+}
+.productCategoryHome img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.productCategoryGroup{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.productCategoryGroup img{
+    margin: 0px 10px;   
+}
+
+.categorySelectorWrapper{
+    width: 154px;
+}
+
+.categorySelectDiv{
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    width: 100%;
+    height: 28px;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    color: rgb(77, 77, 77);
+    background: rgb(255, 255, 255);
+}
+.categorySelector{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 25px 0px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.categorySelector img{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* hover 카테고리 보여주기 */
+.categoryShow{
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    width: calc(100% + 2px);
+    background: rgb(255, 255, 255);
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 3;
+    border-left: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(238, 238, 238);
+    /* display: none; */
+}
+
+.categoryShowCurrent{
+    width: 100%;
+    height: 28px;
+    padding: 0px 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(247, 47, 51) !important;
+}
+
+.categoryShowNo{
+    width: 100%;
+    height: 28px;
+    padding: 0px 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;    
+}
+
+
+
+/* 상품 설명 스타일링 */
+
+
+
+/* 연관상품 스타일링 */
+
+
+
+/* 공유하기 sns 스타일링 */
+
+
+/* 상품,상점정보 */
+
+
