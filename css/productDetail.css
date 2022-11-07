@@ -324,10 +324,62 @@
 }
 
 /* 연관상품 스타일링 */
+.relatedProductContainer{
+    margin-bottom: 100px;
+}
+
+.relatedProduct{
+    position: relative;
+}
+
+.relatedProudctTop{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.relatedProductContent{
+    display: flex;
+    overflow: hidden;
+}
+
+.relatedProductWrapper{
+    width: 159px;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+.relatedProductWrapper a{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(33, 32, 32);
+}
+
+.relatedProductWrapper .relatedProductImg{
+    position: relative;
+}
+.relatedProductImg img{
+    width: 100%;
+    display: block;
+}
+
+.relatedProductWrapper .relatedProductTitle{
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 13px;
+}
 
 
 
 /* 공유하기 sns 스타일링 */
+
+
 
 
 /* 상품,상점정보 */
