@@ -1,10 +1,11 @@
+// 카테고리 마우스오버 마우스아웃 이벤트핸들러 기능
 const categorySelectorWrapper = document.querySelectorAll(
   ".categorySelectorWrapper"
 );
 const categoryShow = document.querySelectorAll(".categoryShow");
 
-console.log(categorySelectorWrapper);
-console.log(categoryShow);
+// a태그 디폴트값 없애기
+
 // 첫번째 카테고리 이벤트 설정
 categorySelectorWrapper[0].addEventListener("mouseover", () => {
   categoryShow[0].style.display = "block";

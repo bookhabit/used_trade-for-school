@@ -106,7 +106,7 @@
     border-left: 1px solid rgb(238, 238, 238);
     border-bottom: 1px solid rgb(238, 238, 238);
     border-right: 1px solid rgb(238, 238, 238);
-    /* display: none; */
+    display: none;
 }
 
 .categoryShowCurrent{
@@ -131,8 +131,197 @@
 
 
 /* 상품 설명 스타일링 */
+.showProduct{
+    display: flex;
+    padding: 30px 0px;
+}
+/* 상품 설명 이미지 컨테이너 - 왼쪽부분*/
+.productImgWrapper{
+    margin-right: 40px;
+    flex-shrink: 0;
+    width: 430px;
+    height: 430px;
+}
+
+.productImgDiv{
+    border: 1px solid rgb(238, 238, 238);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.productImg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.productImg img{
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out 0s;
+    opacity: 1;
+    object-fit: cover;
+}
+
+.productMoreImgBtnDiv{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.productMoreImgBtnDiv .productMoreImgBtnCurrent{
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: rgb(33, 33, 33);
+    border: 0px;
+    cursor: pointer;
+}
+
+.productMoreImgBtnDiv .productMoreImgBtn{
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 
+/* 상품 설명 내용 부분 -오른쪽부분 */
+.productContentWrapper{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.productContentDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+/* 설명부분 .productContentDiv .productContent */
+
+/* 제목,가격 */
+.titleAndPrice{
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    width: 100%;
+}
+.titleAndPrice .productTitle{
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.titleAndPrice .priceWrapper{
+    display: flex;
+    align-items: flex-end;
+}
+.titleAndPrice .priceWrapper .productPrice{
+    font-size: 40px;
+    font-weight: 500;
+}
+.titleAndPrice .priceWrapper .productPrice span{
+    font-size: 28px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* 상품 상세설명 부분 .productContentDiv .productDetails */
+.productDetails .detailInfo{
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 25px;
+}
+.detailInfo .detailInfoName{
+    position: relative;
+    width: 90px;
+    padding-left: 15px;
+    color: rgb(153, 153, 153);
+}
+.detailInfo .detailInfoName::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgb(204, 204, 204);
+}
+.detailInfo .detailInfoValue{
+    position: relative;
+    display: flex;
+    font-weight: 400;
+}
+
+/* 버튼 부분 */
+.productContentDiv .productBtns{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.productBtns > *{
+    flex: 1 1 0%;
+    font-weight: 600;
+    margin-right: 10px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 56px;
+    font-size: 18px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.productBtns .wishBtn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    background: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 1;
+}
+.productBtns .wishBtn span {
+    margin-left: 5px;
+}
+
+.productBtns .talkBtn {
+    background: rgb(255, 164, 37);
+    border: 1px solid rgb(243, 150, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.productBtns .talkBtn img{
+    margin-right: 5px;
+}
+
+.productBtns .buyBtn{
+    background: rgb(247, 0, 0);
+    border: 1px solid rgb(223, 0, 0);
+    color: rgb(255, 255, 255);
+}
 
 /* 연관상품 스타일링 */
 
