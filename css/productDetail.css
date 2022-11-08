@@ -378,9 +378,47 @@
 
 
 /* 공유하기 sns 스타일링 */
+.shareSNS{
+    height: 50px;
+    border-bottom: 1px solid rgb(33, 33, 33);
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
 
+.shareSNS button{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.shareSNS button img{
+    vertical-align: bottom;
+    border-style: none;
+}
 
+.shareSNS .shareNaver{
+    background: rgb(0, 203, 47);
+}
 
+.shareSNS .shareFacebook{
+    background: rgb(59, 89, 152);
+}
+
+.shareSNS .shareTwitter{
+    background: rgb(85, 172, 238);
+}
+
+.shareSNS .shareURL{
+    background: rgb(126, 110, 108);
+}
 
 /* 상품,상점정보 */
 
